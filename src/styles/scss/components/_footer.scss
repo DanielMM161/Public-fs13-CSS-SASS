@@ -1,0 +1,51 @@
+@import "../abstracts/variables";
+
+.footer {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    max-width: $max-width-wrap;
+    margin: 0 auto;
+
+    &-nav {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+  }
+
+  &-icons {
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  &-icons li:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &-icons svg{
+    fill: black;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav {
+    min-width: 150px;
+}

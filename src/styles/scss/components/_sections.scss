@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+
+.sections-wrap {
+  margin: 0 auto;
+  max-width: $max-width-wrap;
+  width: 100%;
+  margin-bottom: 8vh;
+
+  .content-main {
+    & article {
+      background-color: red;
+      padding: 170px 145px 170px;
+      border-radius: 30px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .btn-load-more {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    background-color: #363643;
+    padding: 32px 35px 31px;
+    border-radius: 16px;
+  }
+  
+}
+
