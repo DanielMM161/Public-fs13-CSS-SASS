@@ -7,13 +7,10 @@
 
     &-wrap {
         display: flex;
+        align-items: center;
         justify-content: center;
         max-width: $max-width-wrap;
         margin: 0 auto;
-
-        &-logo {
-            width: 100%;
-        }
 
         &-nav {
             display: flex;
@@ -23,6 +20,10 @@
     }
 }
 
+.header-wrap-logo img {
+    max-height: 35px;
+}
+
 nav ul {
     text-align: center;
 }
@@ -30,8 +31,12 @@ nav ul {
 nav li {
     display: inline-block;
     padding: 20px;
+    color: $color-font;
+    font-family: $font-family-secondary;
 }
 
 nav {
     min-width: 150px;
+    font-size: 1rem;
+    font-weight: bold;
 }
