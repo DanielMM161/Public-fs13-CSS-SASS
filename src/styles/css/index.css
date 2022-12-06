@@ -268,12 +268,6 @@ nav {
   width: 100%;
   margin-bottom: 8vh;
 }
-.sections-wrap .content-main article {
-  background-color: red;
-  padding: 170px 145px 170px;
-  border-radius: 30px;
-  margin-bottom: 35px;
-}
 .sections-wrap .btn-load-more {
   margin: 0 auto;
   width: 80%;
@@ -282,6 +276,50 @@ nav {
   background-color: #363643;
   padding: 32px 35px 31px;
   border-radius: 16px;
+}
+
+.section-main article {
+  background-color: red;
+  padding: 140px 135px 140px;
+  min-height: 550px;
+  border-radius: 30px;
+  margin-bottom: 35px;
+  color: #ebebeb;
+}
+.section-main article:nth-child(2) {
+  color: #333350;
+}
+.section-main article:nth-child(2) div a {
+  border: 1px solid #333350;
+}
+.section-main-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+.section-main-content div {
+  font-size: 0.6rem;
+}
+.section-main-content div :first-child {
+  margin-right: 8px;
+}
+.section-main-content div a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 16px;
+}
+.section-main-content h2 {
+  line-height: 1.4;
+  font-size: 4rem;
+  margin: 40px 0;
+  font-weight: 700;
+}
+.section-main-content p {
+  font-size: 1rem;
 }
 
 * {
