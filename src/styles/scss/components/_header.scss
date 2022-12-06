@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    padding: 5em;
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &-logo {
+        width: 30%;
+    }
+
+    &-nav {
+        width: 70%;
+    }
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav {
+    min-width: 150px;
+}
