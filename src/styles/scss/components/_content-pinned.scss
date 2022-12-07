@@ -32,7 +32,7 @@
   & .item:nth-child(1) {
     grid-area: box1;
     width: 576px;
-    @include mixins.item-pinned("../../assets/pinned/pinned-1.jpg", rgb(0 0 0 / 30%));
+    @include mixins.background-image("../../assets/pinned/pinned-1.jpg", rgb(0 0 0 / 30%));
     
     span {
       background-color: $color-font-text;
@@ -45,7 +45,7 @@
 
   & .item:nth-child(2) {
     grid-area: box2;
-    @include mixins.item-pinned("../../assets/pinned/pinned-2.jpg", rgb(23 35 255 / 70%));
+    @include mixins.background-image("../../assets/pinned/pinned-2.jpg", rgb(23 35 255 / 70%));
     height: 220px;
 
     span {
@@ -71,7 +71,7 @@
 
   & .item:nth-child(4) {
     grid-area: box4;
-    @include mixins.item-pinned("../../assets/pinned/pinned-3.jpg", rgb(102 7 124 / 70%));
+    @include mixins.background-image("../../assets/pinned/pinned-3.jpg", rgb(102 7 124 / 70%));
     height: 220px;
 
     span {
@@ -83,7 +83,7 @@
 
   & .item:nth-child(5) {
     grid-area: box5;
-    @include mixins.item-pinned("../../assets/pinned/pinned-4.jpg", rgb(255 158 216 / 70%));
+    @include mixins.background-image("../../assets/pinned/pinned-4.jpg", rgb(255 158 216 / 70%));
     height: 220px;
 
     span {
@@ -91,8 +91,6 @@
       background-color: $color-font-black; 
     }
   }
-
-
 }
 
 .item-column {

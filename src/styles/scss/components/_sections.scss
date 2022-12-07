@@ -23,25 +23,67 @@
 }
 
 .section-main {
-  & article {
-    background-color: red;
-    margin-bottom: 35px;
-    @include mixins.item-card(140px, 135px, $color-font-text, 550px);
-    h2 {
-      font-weight: bold;
-      font-family: "Corben", serif;
-      margin: 40px 0;
-      @include mixins.h2-properties(4rem)
-    }
-  }
-
-  & article:nth-child(2) {
-    @include mixins.item-card(140px, 135px, $color-font-black, 550px);
-  }
 
   &-content {
     height: 100%;
     @extend .flex-column;
   }
-}
 
+  & article {
+    cursor: pointer;
+    transition: background-size 0.2s ease-in;
+    margin-bottom: 35px;
+    @include mixins.item-card(140px, 135px, $color-font-text, 550px);
+
+    h2 {
+      font-weight: bold;
+      font-family: "Corben", serif;
+      margin: 40px 0;
+      @include mixins.h2-properties(3rem)
+    }
+
+    &:nth-child(1) {
+      @include mixins.background-image("../../assets/main/section-1.jpg", rgb(0 0 0 / 30%));
+      background-size: 100%;
+
+      & span {
+        &:hover {
+          background: $color-font-text;
+          color: $color-font-black;
+          transition: all 0.2s linear;
+        }
+      }
+    }
+  
+    &:nth-child(2) {
+      @include mixins.background-image("../../assets/main/section-2.jpg", rgb(254 214 114 / 80%));
+      @include mixins.item-card(140px, 135px, $color-font-black, 550px);
+      background-size: 100%;
+
+      & span {
+        &:hover {
+          background: $color-font-black;
+          color: $color-font-text;
+          transition: all 0.2s linear;
+        }
+      }
+    }
+  
+    &:nth-child(3) {
+      @include mixins.background-image("../../assets/main/section-3.jpg", rgb(0 0 0 / 30%));
+      background-size: 100%;
+
+      & span {
+        &:hover {
+          background: $color-font-text;
+          color: $color-font-black;
+          transition: all 0.2s linear;
+        }
+      }
+    }
+
+    &:hover {
+      background-size: 102%; 
+     }
+  }
+}
