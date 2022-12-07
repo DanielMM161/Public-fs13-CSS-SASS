@@ -25,59 +25,115 @@
     grid-template-rows: 489px 468px;
     gap: 25px;
     width: 100%;
+    transition: background-size 3s ease-in;
 
     & .item-card {
-      background-size: 100%;
-    }
+      cursor: pointer;
+      background-size: 100%;      
 
-    & .item-card:nth-child(1) {
-      @include mixins.item-card(70px, 80px, $color-font-black, 0px);
       h2 {
-        @include mixins.h2-properties(3rem);
-        margin: 40px 0;
+        font-family: "Corben", serif;
+        margin: 30px 0;
+        line-height: 1.4;      
       }
-      grid-area: box1;
-      background-color: rgb(116, 116, 116);
-    }
 
-    & .item-card:nth-child(2) {
-      @include mixins.item-card(70px, 80px, $color-font-black, 0px);
-      h2 {
-        @include mixins.h2-properties(3rem);
-        margin: 40px 0;
+      &:nth-child(1) {
+        grid-area: box1;
+        @include mixins.item-card(70px, 80px, $color-font-black, 0px);
+        @include mixins.background-image("../../assets/bottom/bottom-1.jpg", rgb(238 190 255 / 88%));
+        
+        
+        h2 {
+          @include mixins.h2-properties(2rem);
+        }
+  
+        & span {
+          &:hover {
+            background: $color-font-black;
+            color: $color-font-text;
+            transition: all 0.2s linear;          
+          }
+        }
       }
-      grid-area: box2;
-      background-color: rgb(116, 116, 116);
-    }
-
-    & .item-card:nth-child(3) {
-      grid-area: box3;
-      background-color: rgb(116, 116, 116);
-      @include mixins.item-card(70px, 50px, $color-font-text, 0px);
-      h2 {
-        @include mixins.h2-properties(2rem);
-        margin: 40px 0;
+  
+      &:nth-child(2) {
+        grid-area: box2;
+        @include mixins.item-card(70px, 80px, $color-font-black, 0px);
+        @include mixins.background-image("../../assets/bottom/bottom-2.jpg", rgb(255 180 105 / 88%));
+        
+        h2 {
+          @include mixins.h2-properties(2rem);
+        }
+  
+        & span {
+          &:hover {
+            background: $color-font-black;
+            color: $color-font-text;
+            transition: all 0.2s linear;          
+          }
+        }
       }
-    }
-
-    & .item-card:nth-child(4) {
-      @include mixins.item-card(70px, 50px, $color-font-black, 0px);
-      h2 {
-        @include mixins.h2-properties(2rem);
-        margin: 40px 0;
+  
+      &:nth-child(3) {
+        grid-area: box3;
+        @include mixins.item-card(70px, 50px, $color-font-text, 0px);
+        @include mixins.background-image("../../assets/bottom/bottom-3.jpg", rgb(0 0 0 / 30%));
+        
+        h2 {
+          @include mixins.h2-properties(1.5rem);
+        }
+  
+        & span {
+          &:hover {
+            background: $color-font-text;
+            color: $color-font-black;
+            transition: all 0.2s linear;          
+          }
+        }
       }
-      grid-area: box4;
-      background-color: rgb(116, 116, 116);
-    }
-
-    & .item-card:nth-child(5) {
-      @include mixins.item-card(70px, 50px, $color-font-text, 0px);
-      h2 {
-        @include mixins.h2-properties(2rem);
-        margin: 40px 0;
+  
+      &:nth-child(4) {
+        grid-area: box4;
+        @include mixins.item-card(70px, 50px, $color-font-black, 0px);
+        @include mixins.background-image("../../assets/bottom/bottom-4.jpg", rgb(255 158 216 / 88%));      
+        @include mixins.h2-properties(1.5rem);
+  
+        h2 {
+          @include mixins.h2-properties(1.5rem);
+        }
+  
+        & span {
+          &:hover {
+            background: $color-font-black;
+            color: $color-font-text;  
+            transition: all 0.2s linear;        
+          }
+        }
       }
-      grid-area: box5;
-      background-color: rgb(116, 116, 116);
+  
+      &:nth-child(5) {
+        grid-area: box5;
+        @include mixins.item-card(70px, 50px, $color-font-text, 0px);
+        @include mixins.background-image("../../assets/bottom/bottom-5.jpg", rgb(0 0 0 / 30%));   
+        @include mixins.h2-properties(1.5rem);
+        transition: background-size 3s ease-in;     
+  
+        h2 {
+          @include mixins.h2-properties(1.5rem);
+        }
+  
+        & span {
+          &:hover {
+            background: $color-font-text;
+            color: $color-font-black;
+            transition: all 0.2s linear;         
+          }
+        }
+      }
+  
+      &:hover {           
+        background-size: 104%; 
+       }
     }
   }
 }

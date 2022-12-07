@@ -8,6 +8,7 @@
   margin-bottom: 8vh;
 
   .btn-load-more {
+    cursor: pointer;
     margin: 0 auto;
     width: 80%;
     height: auto;
@@ -18,6 +19,15 @@
     color: $color-font-text;
     text-transform: uppercase;
     font-weight: 800;
+    transition: 0.3s;
+    letter-spacing: 3px;
+    font-size: 12px;
+
+    &:hover {
+      background-color: #ffb469;
+      color: $color-font-black;
+      width: 83%;
+    }
   }
   
 }
@@ -84,6 +94,6 @@
 
     &:hover {
       background-size: 102%; 
-     }
+    }
   }
 }
