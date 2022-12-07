@@ -1,6 +1,8 @@
+@use "../abstracts/mixins";
+@import "../abstracts/variables";
+
 .content-bottom {
-  display: flex;
-  flex-direction: column;
+  @extend .flex-column;
   align-items: center;
   margin-bottom: 30px;
 
@@ -8,7 +10,8 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #ebebeb;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
+    margin: 30px 0;
     line-height: 1.5;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -24,35 +27,57 @@
     width: 100%;
 
     & .item-card {
-      display: flex;
-      flex-direction: column;
-      border-radius: 15px;
       background-size: 100%;
     }
 
     & .item-card:nth-child(1) {
+      @include mixins.item-card(70px, 80px, $color-font-black, 0px);
+      h2 {
+        @include mixins.h2-properties(3rem);
+        margin: 40px 0;
+      }
       grid-area: box1;
-      background-color: blue;
+      background-color: rgb(116, 116, 116);
     }
 
     & .item-card:nth-child(2) {
+      @include mixins.item-card(70px, 80px, $color-font-black, 0px);
+      h2 {
+        @include mixins.h2-properties(3rem);
+        margin: 40px 0;
+      }
       grid-area: box2;
-      background-color: blue;
+      background-color: rgb(116, 116, 116);
     }
 
     & .item-card:nth-child(3) {
       grid-area: box3;
-      background-color: blue;
+      background-color: rgb(116, 116, 116);
+      @include mixins.item-card(70px, 50px, $color-font-text, 0px);
+      h2 {
+        @include mixins.h2-properties(2rem);
+        margin: 40px 0;
+      }
     }
 
     & .item-card:nth-child(4) {
+      @include mixins.item-card(70px, 50px, $color-font-black, 0px);
+      h2 {
+        @include mixins.h2-properties(2rem);
+        margin: 40px 0;
+      }
       grid-area: box4;
-      background-color: blue;
+      background-color: rgb(116, 116, 116);
     }
 
     & .item-card:nth-child(5) {
+      @include mixins.item-card(70px, 50px, $color-font-text, 0px);
+      h2 {
+        @include mixins.h2-properties(2rem);
+        margin: 40px 0;
+      }
       grid-area: box5;
-      background-color: blue;
+      background-color: rgb(116, 116, 116);
     }
   }
 }

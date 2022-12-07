@@ -1,6 +1,10 @@
-.content-bottom {
+.flex-column, .section-main-content, .content-bottom {
   display: flex;
   flex-direction: column;
+  font-weight: 700;
+}
+
+.content-bottom {
   align-items: center;
   margin-bottom: 30px;
 }
@@ -8,7 +12,8 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #ebebeb;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
+  margin: 30px 0;
   line-height: 1.5;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -21,30 +26,152 @@
   width: 100%;
 }
 .content-bottom-grid .item-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
   background-size: 100%;
 }
 .content-bottom-grid .item-card:nth-child(1) {
+  padding: 70px 80px;
+  min-height: 0px;
+  border-radius: 16px;
+  color: #333350;
   grid-area: box1;
-  background-color: blue;
+  background-color: rgb(116, 116, 116);
+}
+.content-bottom-grid .item-card:nth-child(1) div :first-child {
+  margin-right: 8px;
+}
+.content-bottom-grid .item-card:nth-child(1) div span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 0.6rem;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid #333350;
+}
+.content-bottom-grid .item-card:nth-child(1) p {
+  font-size: 1rem;
+}
+.content-bottom-grid .item-card:nth-child(1) h2 {
+  line-height: 1.4;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 40px 0;
 }
 .content-bottom-grid .item-card:nth-child(2) {
+  padding: 70px 80px;
+  min-height: 0px;
+  border-radius: 16px;
+  color: #333350;
   grid-area: box2;
-  background-color: blue;
+  background-color: rgb(116, 116, 116);
+}
+.content-bottom-grid .item-card:nth-child(2) div :first-child {
+  margin-right: 8px;
+}
+.content-bottom-grid .item-card:nth-child(2) div span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 0.6rem;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid #333350;
+}
+.content-bottom-grid .item-card:nth-child(2) p {
+  font-size: 1rem;
+}
+.content-bottom-grid .item-card:nth-child(2) h2 {
+  line-height: 1.4;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 40px 0;
 }
 .content-bottom-grid .item-card:nth-child(3) {
   grid-area: box3;
-  background-color: blue;
+  background-color: rgb(116, 116, 116);
+  padding: 70px 50px;
+  min-height: 0px;
+  border-radius: 16px;
+  color: #ebebeb;
+}
+.content-bottom-grid .item-card:nth-child(3) div :first-child {
+  margin-right: 8px;
+}
+.content-bottom-grid .item-card:nth-child(3) div span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 0.6rem;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid #ebebeb;
+}
+.content-bottom-grid .item-card:nth-child(3) p {
+  font-size: 1rem;
+}
+.content-bottom-grid .item-card:nth-child(3) h2 {
+  line-height: 1.4;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 40px 0;
 }
 .content-bottom-grid .item-card:nth-child(4) {
+  padding: 70px 50px;
+  min-height: 0px;
+  border-radius: 16px;
+  color: #333350;
   grid-area: box4;
-  background-color: blue;
+  background-color: rgb(116, 116, 116);
+}
+.content-bottom-grid .item-card:nth-child(4) div :first-child {
+  margin-right: 8px;
+}
+.content-bottom-grid .item-card:nth-child(4) div span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 0.6rem;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid #333350;
+}
+.content-bottom-grid .item-card:nth-child(4) p {
+  font-size: 1rem;
+}
+.content-bottom-grid .item-card:nth-child(4) h2 {
+  line-height: 1.4;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 40px 0;
 }
 .content-bottom-grid .item-card:nth-child(5) {
+  padding: 70px 50px;
+  min-height: 0px;
+  border-radius: 16px;
+  color: #ebebeb;
   grid-area: box5;
-  background-color: blue;
+  background-color: rgb(116, 116, 116);
+}
+.content-bottom-grid .item-card:nth-child(5) div :first-child {
+  margin-right: 8px;
+}
+.content-bottom-grid .item-card:nth-child(5) div span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 0.6rem;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid #ebebeb;
+}
+.content-bottom-grid .item-card:nth-child(5) p {
+  font-size: 1rem;
+}
+.content-bottom-grid .item-card:nth-child(5) h2 {
+  line-height: 1.4;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 40px 0;
 }
 
 .content-pinned {
@@ -276,50 +403,63 @@ nav {
   background-color: #363643;
   padding: 32px 35px 31px;
   border-radius: 16px;
+  color: #ebebeb;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .section-main article {
   background-color: red;
-  padding: 140px 135px 140px;
-  min-height: 550px;
-  border-radius: 30px;
   margin-bottom: 35px;
+  padding: 140px 135px;
+  min-height: 550px;
+  border-radius: 16px;
   color: #ebebeb;
 }
-.section-main article:nth-child(2) {
-  color: #333350;
-}
-.section-main article:nth-child(2) div a {
-  border: 1px solid #333350;
-}
-.section-main-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-}
-.section-main-content div {
-  font-size: 0.6rem;
-}
-.section-main-content div :first-child {
+.section-main article div :first-child {
   margin-right: 8px;
 }
-.section-main-content div a {
+.section-main article div span {
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1.3;
-  border: 1px solid white;
+  font-size: 0.6rem;
   padding: 5px 10px;
   border-radius: 16px;
+  border: 1px solid #ebebeb;
 }
-.section-main-content h2 {
+.section-main article p {
+  font-size: 1rem;
+}
+.section-main article h2 {
+  margin: 40px 0;
   line-height: 1.4;
   font-size: 4rem;
-  margin: 40px 0;
   font-weight: 700;
 }
-.section-main-content p {
+.section-main article:nth-child(2) {
+  padding: 140px 135px;
+  min-height: 550px;
+  border-radius: 16px;
+  color: #333350;
+}
+.section-main article:nth-child(2) div :first-child {
+  margin-right: 8px;
+}
+.section-main article:nth-child(2) div span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 0.6rem;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid #333350;
+}
+.section-main article:nth-child(2) p {
   font-size: 1rem;
+}
+.section-main-content {
+  height: 100%;
 }
 
 * {
