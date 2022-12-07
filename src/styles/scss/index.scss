@@ -37,3 +37,15 @@ a {
     padding-right: 55px;
 }
 
+.fixed-text {
+    font-size: 0.9rem;
+    color: #ebebeb;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    transform: translate(-60%, -50%) rotate(-90deg);
+    position: fixed;
+    font-weight: 900;
+    top: 50%;
+    left: 3rem;
+}
+

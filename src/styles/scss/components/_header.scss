@@ -32,6 +32,12 @@ nav li {
     display: inline-block;
     color: $color-font-header;
     font-family: $font-family-secondary;
+
+    svg {
+        width: 17px;
+        height: 17px;
+        fill: #ebebeb;
+    }
 }
 
 nav {
