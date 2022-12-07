@@ -338,10 +338,11 @@
 .footer {
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 25px;
 }
 .footer-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 1230px;
   margin: 0 auto;
@@ -351,10 +352,19 @@
   width: 100%;
   justify-content: flex-start;
 }
+.footer-wrap div {
+  display: flex;
+}
+.footer-wrap p {
+  color: #ebebeb;
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
 .footer-icons {
   list-style: none;
   align-items: center;
-  width: 100%;
   justify-content: flex-end;
   display: flex;
 }
@@ -362,9 +372,13 @@
   margin-right: 20px;
 }
 .footer-icons svg {
-  fill: black;
+  cursor: pointer;
+  fill: #ebebeb;
   width: 20px;
   height: 20px;
+}
+.footer-icons svg:hover {
+  fill: #ffb469;
 }
 
 nav ul {
@@ -372,8 +386,11 @@ nav ul {
 }
 
 nav li {
+  cursor: pointer;
   display: inline-block;
-  padding: 20px;
+  margin-top: 8px;
+  margin-right: 10px;
+  margin-bottom: 8px;
 }
 
 nav {
@@ -405,7 +422,7 @@ nav {
 .content-form-text {
   color: #ebebeb;
   margin-bottom: 40px;
-  animation: typing 10s steps(20, end) infinite, blink-caret 7s step-end infinite;
+  animation: write 10s steps(20, end) infinite, blinking 7s step-end infinite;
   overflow: hidden;
   border-right: 0.15em solid #ffb469;
   white-space: nowrap;
@@ -447,7 +464,7 @@ nav {
   width: 29%;
 }
 
-@keyframes typing {
+@keyframes write {
   0% {
     width: 0;
   }
@@ -458,7 +475,7 @@ nav {
     width: 0;
   }
 }
-@keyframes blink-caret {
+@keyframes blinking {
   from, to {
     border-color: transparent;
   }
@@ -494,7 +511,6 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 20px;
   color: #cecece;
   font-family: "Mulish", serif;
 }

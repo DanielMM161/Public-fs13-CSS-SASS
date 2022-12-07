@@ -3,10 +3,11 @@
 .footer {
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 25px;
 
   &-wrap {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     max-width: $max-width-wrap;
     margin: 0 auto;
@@ -16,12 +17,23 @@
         width: 100%;
         justify-content: flex-start;
     }
+
+    div {
+      display: flex;
+    }
+
+    p {
+      color: #ebebeb;
+      font-size: 10px;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+      opacity: .8;
+    }
   }
 
   &-icons {
     list-style: none;
     align-items: center;
-    width: 100%;
     justify-content: flex-end;
     display: flex;
   }
@@ -31,9 +43,14 @@
   }
 
   &-icons svg{
-    fill: black;
+    cursor: pointer;
+    fill: $color-font-text;
     width: 20px;
     height: 20px;
+
+    &:hover {
+      fill: #ffb469;
+    }
   }
 }
 
@@ -42,8 +59,11 @@ nav ul {
 }
 
 nav li {
+    cursor: pointer;
     display: inline-block;
-    padding: 20px;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-bottom: 8px;
 }
 
 nav {

@@ -28,7 +28,7 @@
   &-text {
     color: $color-font-text;
     margin-bottom: 40px;
-    animation: typing 10s steps(20, end) infinite, blink-caret 7s step-end infinite;
+    animation: write 10s steps(20, end) infinite, blinking 7s step-end infinite;
     overflow: hidden;
     border-right: 0.15em solid #ffb469;
     white-space: nowrap;
@@ -75,7 +75,7 @@
   }
 }
 
-@keyframes typing {
+@keyframes write {
   0% {
     width: 0
   }
@@ -89,7 +89,7 @@
 
 }
 
-@keyframes blink-caret {
+@keyframes blinking {
   from,
   to { 
     border-color: transparent 
