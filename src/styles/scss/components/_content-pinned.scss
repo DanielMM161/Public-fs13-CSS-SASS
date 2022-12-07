@@ -1,7 +1,8 @@
+@use "../abstracts/mixins";
 @import "../abstracts/variables";
 
 .content-pinned {
-  min-height: 400px;
+  min-height: 457px;
   max-width: 1450px;
   width: 100%;
   height: 100%;
@@ -12,97 +13,120 @@
       "box1 box4 box5";
   grid-gap: 10px;
 
-  & .item:nth-child(1) {
-    background: url("../../../assets/pinned/pinned-1.jpg") center;
-    background-color: red;
-    grid-area: box1;
+  & .item {
+    padding: 25px 30px;
+    border-radius: $border-radius; 
+    width: 408px;
 
+    h3 {
+      font-size: 1.4rem;      
+      font-family: $font-family-primary;
+      line-height: 1.8;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  & .item:nth-child(1) {
+    grid-area: box1;
+    width: 576px;
+    @include mixins.item-pinned("../../assets/pinned/pinned-1.jpg", rgb(0 0 0 / 30%));
+    
     span {
-      background-color: white;
-      }
+      background-color: $color-font-text;
+    }
+
+    h3 {
+      font-size: 1.8rem;      
+    }
   }
 
   & .item:nth-child(2) {
-    background: url("../../../assets/pinned/pinned-2.jpg") center;
-    background-color: #1423ff;
     grid-area: box2;
+    @include mixins.item-pinned("../../assets/pinned/pinned-2.jpg", rgb(23 35 255 / 70%));
+    height: 220px;
+
     span {
-      color: #1423ff;
-      background-color: white;
-      }
+      color: rgb(20, 35, 255);
+      background-color: $color-font-text;
+    }
   }
 
   & .item:nth-child(3) {
     background-color: #ffb469;
     grid-area: box3;
+    height: 220px;
+
     span {
       color: #ffb469;
-      background-color: #333350;
+      background-color: $color-font-black;
     }
+
     h3, p {
       color: $color-font-black;
     }
   }
 
   & .item:nth-child(4) {
-    background: url("../../../assets/pinned/pinned-3.jpg") center;
-    background-color: #66077c;
     grid-area: box4;
+    @include mixins.item-pinned("../../assets/pinned/pinned-3.jpg", rgb(102 7 124 / 70%));
+    height: 220px;
+
     span {
-      color: #66077c;
-      background-color: white;
-     }
+      color: rgb(102, 7, 124);
+      background-color: $color-font-text;
+    }
     
   }
 
   & .item:nth-child(5) {
-    background: url("../../../assets/pinned/pinned-5.jpg") center;
-    background-color: #FF9ED8;
     grid-area: box5;
+    @include mixins.item-pinned("../../assets/pinned/pinned-4.jpg", rgb(255 158 216 / 70%));
+    height: 220px;
+
     span {
-      color: #FF9ED8;
+      color: rgb(255, 158, 216);
       background-color: $color-font-black; 
     }
-    h3, p {
-      color: $color-font-black;
-    }
+  }
+
+
+}
+
+.item-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3, p {
+    color: #ebebeb;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  span {     
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: $font-family-secondary;
+  }
+
+  div {
+    margin-top: 20px;
   }
 }
 
 .item {
   padding: 25px 30px;
-  border-radius: $border-radius;
-
-  &-column {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    h3, p {
-      color: #ebebeb;
-      font-weight: 700;
-    }
-
-    p {
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.5rem;      
-      line-height: 1.8;
-    }
-
-    span {     
-      padding: 5px 10px;
-      width: fit-content;
-      border-radius: 25px;
-      text-transform: uppercase;
-      font-size: 8px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      font-family: $font-family-secondary;
-    }
-  }
+  border-radius: $border-radius; 
 }

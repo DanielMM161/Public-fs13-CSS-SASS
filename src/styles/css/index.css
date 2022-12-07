@@ -175,7 +175,7 @@
 }
 
 .content-pinned {
-  min-height: 400px;
+  min-height: 457px;
   max-width: 1450px;
   width: 100%;
   height: 100%;
@@ -184,26 +184,47 @@
   grid-template-areas: "box1 box2 box3" "box1 box4 box5";
   grid-gap: 10px;
 }
+.content-pinned .item {
+  padding: 25px 30px;
+  border-radius: 16px;
+  width: 408px;
+}
+.content-pinned .item h3 {
+  font-size: 1.4rem;
+  font-family: "Corben", serif;
+  line-height: 1.8;
+}
+.content-pinned .item:hover {
+  transform: translateY(-3px);
+}
 .content-pinned .item:nth-child(1) {
-  background: url("../../../assets/pinned/pinned-1.jpg") center;
-  background-color: red;
   grid-area: box1;
+  width: 576px;
+  background: url("../../assets/pinned/pinned-1.jpg") center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 .content-pinned .item:nth-child(1) span {
-  background-color: white;
+  background-color: #ebebeb;
+}
+.content-pinned .item:nth-child(1) h3 {
+  font-size: 1.8rem;
 }
 .content-pinned .item:nth-child(2) {
-  background: url("../../../assets/pinned/pinned-2.jpg") center;
-  background-color: #1423ff;
   grid-area: box2;
+  background: url("../../assets/pinned/pinned-2.jpg") center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(23, 35, 255, 0.7);
+  height: 220px;
 }
 .content-pinned .item:nth-child(2) span {
-  color: #1423ff;
-  background-color: white;
+  color: rgb(20, 35, 255);
+  background-color: #ebebeb;
 }
 .content-pinned .item:nth-child(3) {
   background-color: #ffb469;
   grid-area: box3;
+  height: 220px;
 }
 .content-pinned .item:nth-child(3) span {
   color: #ffb469;
@@ -213,31 +234,28 @@
   color: #333350;
 }
 .content-pinned .item:nth-child(4) {
-  background: url("../../../assets/pinned/pinned-3.jpg") center;
-  background-color: #66077c;
   grid-area: box4;
+  background: url("../../assets/pinned/pinned-3.jpg") center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(102, 7, 124, 0.7);
+  height: 220px;
 }
 .content-pinned .item:nth-child(4) span {
-  color: #66077c;
-  background-color: white;
+  color: rgb(102, 7, 124);
+  background-color: #ebebeb;
 }
 .content-pinned .item:nth-child(5) {
-  background: url("../../../assets/pinned/pinned-5.jpg") center;
-  background-color: #FF9ED8;
   grid-area: box5;
+  background: url("../../assets/pinned/pinned-4.jpg") center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(255, 158, 216, 0.7);
+  height: 220px;
 }
 .content-pinned .item:nth-child(5) span {
-  color: #FF9ED8;
+  color: rgb(255, 158, 216);
   background-color: #333350;
 }
-.content-pinned .item:nth-child(5) h3, .content-pinned .item:nth-child(5) p {
-  color: #333350;
-}
 
-.item {
-  padding: 25px 30px;
-  border-radius: 16px;
-}
 .item-column {
   height: 100%;
   display: flex;
@@ -249,12 +267,7 @@
   font-weight: 700;
 }
 .item-column p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-.item-column h3 {
-  font-size: 1.5rem;
-  line-height: 1.8;
+  font-size: 0.8rem;
 }
 .item-column span {
   padding: 5px 10px;
@@ -265,6 +278,14 @@
   font-weight: 800;
   letter-spacing: 2px;
   font-family: "Mulish", serif;
+}
+.item-column div {
+  margin-top: 20px;
+}
+
+.item {
+  padding: 25px 30px;
+  border-radius: 16px;
 }
 
 .footer {

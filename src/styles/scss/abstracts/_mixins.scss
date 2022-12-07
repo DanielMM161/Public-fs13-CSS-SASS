@@ -37,3 +37,9 @@
   flex-direction: column;
   font-weight: 700;
 }
+
+@mixin item-pinned($path, $color) {
+  background: url($path) center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px $color;
+}
