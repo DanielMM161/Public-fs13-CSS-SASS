@@ -28,6 +28,8 @@
     margin-bottom: 35px;
     @include mixins.item-card(140px, 135px, $color-font-text, 550px);
     h2 {
+      font-weight: bold;
+      font-family: "Corben", serif;
       margin: 40px 0;
       @include mixins.h2-properties(4rem)
     }
