@@ -1,9 +1,9 @@
+@use "layouts/header";
+@use "layouts/footer";
 @use "components/content-bottom";
 @use "components/content-pinned";
-@use "components/footer";
 @use "components/content-form";
-@use "components/header";
-@use "components/sections";
+@use "components/content-sections";
 
 @use "abstracts/variables";
 
@@ -17,10 +17,9 @@
 
 html,
 body {
-    font-family: 'Mulish', serif;
+    font-family: $secondary-font-family;
     margin: 0;
     height: 100%;
-    max-height: 100%;
     background-color: $background-color;
 }
 
@@ -38,14 +37,14 @@ a {
 }
 
 .fixed-text {
+    position: fixed;
+    left: 2rem;
     font-size: 0.9rem;
-    color: #ebebeb;
+    top: 50%;
     line-height: 2;
     letter-spacing: 1.5px;
-    transform: translate(-60%, -50%) rotate(-90deg);
-    position: fixed;
+    color: #ebebeb;
+    transform: translate(-50%, -50%) rotate(-90deg);
     font-weight: 900;
-    top: 50%;
-    left: 3rem;
 }
 

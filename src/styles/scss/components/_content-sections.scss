@@ -16,7 +16,7 @@
     background-color: #363643;
     padding: 32px 35px 31px;
     border-radius: 16px;
-    color: $color-font-text;
+    color: $light-font-color;
     text-transform: uppercase;
     font-weight: 800;
     transition: 0.3s;
@@ -25,7 +25,7 @@
 
     &:hover {
       background-color: #ffb469;
-      color: $color-font-black;
+      color: $dark-font-color;
       width: 83%;
     }
   }
@@ -43,7 +43,7 @@
     cursor: pointer;
     transition: background-size 0.2s ease-in;
     margin-bottom: 35px;
-    @include mixins.item-card(140px, 135px, $color-font-text, 550px);
+    @include mixins.item-card(140px, 135px, $light-font-color, 550px);
 
     h2 {
       font-weight: bold;
@@ -58,8 +58,8 @@
 
       & span {
         &:hover {
-          background: $color-font-text;
-          color: $color-font-black;
+          background: $light-font-color;
+          color: $dark-font-color;
           transition: all 0.2s linear;
         }
       }
@@ -67,13 +67,13 @@
   
     &:nth-child(2) {
       @include mixins.background-image("../../assets/main/section-2.jpg", rgb(254 214 114 / 80%));
-      @include mixins.item-card(140px, 135px, $color-font-black, 550px);
+      @include mixins.item-card(140px, 135px, $dark-font-color, 550px);
       background-size: 100%;
 
       & span {
         &:hover {
-          background: $color-font-black;
-          color: $color-font-text;
+          background: $dark-font-color;
+          color: $light-font-color;
           transition: all 0.2s linear;
         }
       }
@@ -85,8 +85,8 @@
 
       & span {
         &:hover {
-          background: $color-font-text;
-          color: $color-font-black;
+          background: $light-font-color;
+          color: $dark-font-color;
           transition: all 0.2s linear;
         }
       }

@@ -1,3 +1,108 @@
+.header {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.header-wrap-nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header-wrap-logo img {
+  max-height: 35px;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  color: #cecece;
+  font-family: "Mulish", serif;
+}
+nav li svg {
+  width: 17px;
+  height: 17px;
+  fill: #ebebeb;
+}
+
+nav {
+  min-width: 150px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.footer-wrap-nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.footer-wrap div {
+  display: flex;
+}
+.footer-wrap p {
+  color: #ebebeb;
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.footer-icons {
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+}
+.footer-icons li:not(:last-child) {
+  margin-right: 20px;
+}
+.footer-icons svg {
+  cursor: pointer;
+  fill: #ebebeb;
+  width: 20px;
+  height: 20px;
+}
+.footer-icons svg:hover {
+  fill: #ffb469;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+nav {
+  min-width: 150px;
+}
+
 .flex-column, .section-main-content, .content-form, .content-bottom {
   display: flex;
   flex-direction: column;
@@ -335,68 +440,6 @@
   border-radius: 16px;
 }
 
-.footer {
-  width: 100%;
-  padding-top: 40px;
-  padding-bottom: 25px;
-}
-.footer-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1230px;
-  margin: 0 auto;
-}
-.footer-wrap-nav {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-}
-.footer-wrap div {
-  display: flex;
-}
-.footer-wrap p {
-  color: #ebebeb;
-  font-size: 10px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  opacity: 0.8;
-}
-.footer-icons {
-  list-style: none;
-  align-items: center;
-  justify-content: flex-end;
-  display: flex;
-}
-.footer-icons li:not(:last-child) {
-  margin-right: 20px;
-}
-.footer-icons svg {
-  cursor: pointer;
-  fill: #ebebeb;
-  width: 20px;
-  height: 20px;
-}
-.footer-icons svg:hover {
-  fill: #ffb469;
-}
-
-nav ul {
-  text-align: center;
-}
-
-nav li {
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 8px;
-  margin-right: 10px;
-  margin-bottom: 8px;
-}
-
-nav {
-  min-width: 150px;
-}
-
 .content-form {
   font-family: "Corben", serif;
   margin-top: 8vh;
@@ -483,49 +526,6 @@ nav {
     border-color: #ebebeb;
   }
 }
-.header {
-  width: 100%;
-  padding-top: 40px;
-  padding-bottom: 70px;
-}
-.header-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1230px;
-  margin: 0 auto;
-}
-.header-wrap-nav {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.header-wrap-logo img {
-  max-height: 35px;
-}
-
-nav ul {
-  text-align: center;
-}
-
-nav li {
-  display: inline-block;
-  color: #cecece;
-  font-family: "Mulish", serif;
-}
-nav li svg {
-  width: 17px;
-  height: 17px;
-  fill: #ebebeb;
-}
-
-nav {
-  min-width: 150px;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
 .sections-wrap {
   margin: 0 auto;
   max-width: 1230px;
@@ -656,7 +656,6 @@ body {
   font-family: "Mulish", serif;
   margin: 0;
   height: 100%;
-  max-height: 100%;
   background-color: #252530;
 }
 
@@ -674,15 +673,15 @@ a {
 }
 
 .fixed-text {
+  position: fixed;
+  left: 2rem;
   font-size: 0.9rem;
-  color: #ebebeb;
+  top: 50%;
   line-height: 2;
   letter-spacing: 1.5px;
-  transform: translate(-60%, -50%) rotate(-90deg);
-  position: fixed;
+  color: #ebebeb;
+  transform: translate(-50%, -50%) rotate(-90deg);
   font-weight: 900;
-  top: 50%;
-  left: 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,15 +1,23 @@
-$text-color-white: #ffffff;
-$text-color-black: #0000;
+// Backgrounds
 $background-color: #252530;
 $background-btn: #363643;
+
+// Widths
 $max-width-wrap: 1230px;
-$max-width-pinned: 1510px;
+
+// Fonts
+$primary-font-family: 'Corben', serif;
+$secondary-font-family: 'Mulish', serif;
+
+// Text Color
+$header-font-color: #cecece;
+$light-font-color: #ebebeb;
+$dark-font-color: #333350;
+
+
+// Radius
 $border-radius: 16px;
-$spacing-between: 18px;
-$padding-horizontal: 55px;
-$font-family-primary: 'Corben', serif;
-$font-family-secondary: 'Mulish', serif;
-$color-font-header: #cecece;
-$color-font-text: #ebebeb;
-$color-font-black: #333350;
+
+
+// Weight
 $font-weight-generic: 700;

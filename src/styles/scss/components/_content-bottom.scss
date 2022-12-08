@@ -39,7 +39,7 @@
 
       &:nth-child(1) {
         grid-area: box1;
-        @include mixins.item-card(70px, 80px, $color-font-black, 0px);
+        @include mixins.item-card(70px, 80px, $dark-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-1.jpg", rgb(238 190 255 / 88%));
         
         
@@ -49,8 +49,8 @@
   
         & span {
           &:hover {
-            background: $color-font-black;
-            color: $color-font-text;
+            background: $dark-font-color;
+            color: $light-font-color;
             transition: all 0.2s linear;          
           }
         }
@@ -58,7 +58,7 @@
   
       &:nth-child(2) {
         grid-area: box2;
-        @include mixins.item-card(70px, 80px, $color-font-black, 0px);
+        @include mixins.item-card(70px, 80px, $dark-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-2.jpg", rgb(255 180 105 / 88%));
         
         h2 {
@@ -67,8 +67,8 @@
   
         & span {
           &:hover {
-            background: $color-font-black;
-            color: $color-font-text;
+            background: $dark-font-color;
+            color: $light-font-color;
             transition: all 0.2s linear;          
           }
         }
@@ -76,7 +76,7 @@
   
       &:nth-child(3) {
         grid-area: box3;
-        @include mixins.item-card(70px, 50px, $color-font-text, 0px);
+        @include mixins.item-card(70px, 50px, $light-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-3.jpg", rgb(0 0 0 / 30%));
         
         h2 {
@@ -85,8 +85,8 @@
   
         & span {
           &:hover {
-            background: $color-font-text;
-            color: $color-font-black;
+            background: $light-font-color;
+            color: $dark-font-color;
             transition: all 0.2s linear;          
           }
         }
@@ -94,7 +94,7 @@
   
       &:nth-child(4) {
         grid-area: box4;
-        @include mixins.item-card(70px, 50px, $color-font-black, 0px);
+        @include mixins.item-card(70px, 50px, $dark-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-4.jpg", rgb(255 158 216 / 88%));      
         @include mixins.h2-properties(1.5rem);
   
@@ -104,8 +104,8 @@
   
         & span {
           &:hover {
-            background: $color-font-black;
-            color: $color-font-text;  
+            background: $dark-font-color;
+            color: $light-font-color;  
             transition: all 0.2s linear;        
           }
         }
@@ -113,7 +113,7 @@
   
       &:nth-child(5) {
         grid-area: box5;
-        @include mixins.item-card(70px, 50px, $color-font-text, 0px);
+        @include mixins.item-card(70px, 50px, $light-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-5.jpg", rgb(0 0 0 / 30%));   
         @include mixins.h2-properties(1.5rem);
         transition: background-size 3s ease-in;     
@@ -124,8 +124,8 @@
   
         & span {
           &:hover {
-            background: $color-font-text;
-            color: $color-font-black;
+            background: $light-font-color;
+            color: $dark-font-color;
             transition: all 0.2s linear;         
           }
         }

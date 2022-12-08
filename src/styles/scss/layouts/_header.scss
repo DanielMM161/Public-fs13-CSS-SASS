@@ -30,8 +30,8 @@ nav ul {
 
 nav li {
     display: inline-block;
-    color: $color-font-header;
-    font-family: $font-family-secondary;
+    color: $header-font-color;
+    font-family: $secondary-font-family;
 
     svg {
         width: 17px;

@@ -3,7 +3,7 @@
 
 .content-form {
   @extend .flex-column;
-  font-family: $font-family-primary;
+  font-family: $primary-font-family;
 
   margin-top: 8vh;
   margin: 50px auto;
@@ -14,19 +14,19 @@
 
   h2 {
     margin-bottom: 8px;
-    color: $color-font-text;
+    color: $light-font-color;
     @include mixins.h2-properties(2.5rem);
   }
 
   h3 {
-    font-family: $font-family-secondary;
+    font-family: $secondary-font-family;
     letter-spacing: 2px;
     font-size: 1rem;
     text-align: left;
   }
 
   &-text {
-    color: $color-font-text;
+    color: $light-font-color;
     margin-bottom: 40px;
     animation: write 10s steps(20, end) infinite, blinking 7s step-end infinite;
     overflow: hidden;
@@ -46,7 +46,7 @@
     border-right: none;
     border-left: none;
     border-radius: 0;
-    border-bottom: 1px solid $color-font-text;
+    border-bottom: 1px solid $light-font-color;
     background-color: transparent;
   }
 
@@ -60,16 +60,16 @@
     background-color: #363643;
     padding: 32px 38px;
     border-radius: 16px;
-    color: $color-font-text;
+    color: $light-font-color;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     transition: 0.3s;    
     font-size: 12px;
-    font-family: $font-family-secondary;
+    font-family: $secondary-font-family;
 
     &:hover {
       background-color: #ffb469;
-      color: $color-font-black;
+      color: $dark-font-color;
       width: 29%;
     }
   }
@@ -94,5 +94,5 @@
   to { 
     border-color: transparent 
   }
-  50% { border-color: $color-font-text; }
+  50% { border-color: $light-font-color; }
 }
