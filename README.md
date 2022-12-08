@@ -1,13 +1,13 @@
 # CSS/SASS , Grid , Flexbox Assignment
 
-CSS/SCSS Exercise, where I copied the style from this page  [Maido's](https://maido-dark.fueko.net/)
+CSS/SCSS Exercise, where I copied the style from this page [Maido's](https://maido-dark.fueko.net/)
 
 # Technology
  - HTML5
  - CSS/SASS
 
 # Project Structure
-│   .DS_Store
+``` bash 
 │   .gitignore
 │   package-lock.json
 │   package.json
@@ -57,5 +57,6 @@ CSS/SCSS Exercise, where I copied the style from this page  [Maido's](https://ma
             └───layouts
                     _footer.scss
                     _header.scss
+```
 ## Getting Started
 Clone the repository from github: [Here](https://github.com/DanielMM161/fs13-CSS-SASS/archive/refs/heads/main.zip)
