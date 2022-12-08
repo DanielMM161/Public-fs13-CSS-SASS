@@ -59,5 +59,5 @@ CSS/SCSS Exercise, where I copied the style from this page [Maido's](https://mai
                     _header.scss
 ```
 ## Getting Started
-Clone the repository from github: [Here](https://github.com/DanielMM161/fs13-CSS-SASS/archive/refs/heads/main.zip)
+Clone the repository from github: [Here](https://github.com/DanielMM161/fs13-CSS-SASS/archive/refs/heads/main.zip) <br>
 Take a look on [Netlify](https://dapper-starburst-1f92ae.netlify.app/).
