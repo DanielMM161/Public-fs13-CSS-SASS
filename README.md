@@ -1,20 +1,61 @@
 # CSS/SASS , Grid , Flexbox Assignment
 
-Refer to this [link](https://preview.themeforest.net/item/maido-multipurpose-ghost-blog-theme/full_screen_preview/24837109?_ga=2.259990478.570486835.1654146705-2133876429.1654146705)(see 'Dark version') and create a similar webpage
+CSS/SCSS Exercise, where I copied the style from this page  [Maido's](https://maido-dark.fueko.net/)
 
-## Requirements (max 4)
+# Technology
+ - HTML5
+ - CSS/SASS
 
-1. Floating the HTML elements using Flexbox and Grid system
-2. Implementing basic animations as shown in the webpage (hover effect,
-active link styles, typing effect). You can modify the outlook of the effects
-3. Implement you codes, using the platform of your choice (For example, Github Pages), then rewrite README file.
-
-This assignment only requires 1 static page. No JavaScript needed.
-Font family and text content can be modified as your preferences.
-You can ignore the small buttons/tags/lables in each card. Only
-texts with some styles are enough.
-
-## Bonus points (max 1)
-
-1. Using SASS (either .sass or .scss) for styling
-2. Make use of variables, mixin, extend
+# Project Structure
+│   .DS_Store
+│   .gitignore
+│   package-lock.json
+│   package.json
+│   README.md
+│
+└───src
+    │   .DS_Store
+    │   index.html
+    │
+    ├───assets
+    │   ├───bottom
+    │   │       bottom-1.jpg
+    │   │       bottom-2.jpg
+    │   │       bottom-3.jpg
+    │   │       bottom-4.jpg
+    │   │       bottom-5.jpg
+    │   │
+    │   ├───main
+    │   │       section-1.jpg
+    │   │       section-2.jpg
+    │   │       section-3.jpg
+    │   │
+    │   └───pinned
+    │           pinned-1.jpg
+    │           pinned-2.jpg
+    │           pinned-3.jpg
+    │           pinned-4.jpg
+    │
+    └───styles
+        ├───css
+        │       index.css
+        │       index.css.map
+        │
+        └───scss
+            │   index.scss
+            │
+            ├───abstracts
+            │       _mixins.scss
+            │       _variables.scss
+            │
+            ├───components
+            │       _content-bottom.scss
+            │       _content-form.scss
+            │       _content-pinned.scss
+            │       _content-sections.scss
+            │
+            └───layouts
+                    _footer.scss
+                    _header.scss
+## Getting Started
+Clone the repository from github: [Here](https://github.com/DanielMM161/fs13-CSS-SASS/archive/refs/heads/main.zip)
