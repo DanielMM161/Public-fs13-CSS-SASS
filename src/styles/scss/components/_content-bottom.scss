@@ -25,11 +25,11 @@
     grid-template-rows: 489px 468px;
     gap: 25px;
     width: 100%;
-    transition: background-size 3s ease-in;
 
     & .item-card {
       cursor: pointer;
       background-size: 100%;      
+      transition: background-size 0.2s ease-in;
 
       h2 {
         font-family: "Corben", serif;
@@ -41,7 +41,7 @@
         grid-area: box1;
         @include mixins.item-card(70px, 80px, $dark-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-1.jpg", rgb(238 190 255 / 88%));
-        
+        background-size: 100%;
         
         h2 {
           @include mixins.h2-properties(2rem);
@@ -54,13 +54,17 @@
             transition: all 0.2s linear;          
           }
         }
+
+        & .description {
+          @include mixins.line-above($dark-font-color, 1px);
+        }
       }
   
       &:nth-child(2) {
         grid-area: box2;
         @include mixins.item-card(70px, 80px, $dark-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-2.jpg", rgb(255 180 105 / 88%));
-        
+        background-size: 100%;
         h2 {
           @include mixins.h2-properties(2rem);
         }
@@ -78,7 +82,7 @@
         grid-area: box3;
         @include mixins.item-card(70px, 50px, $light-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-3.jpg", rgb(0 0 0 / 30%));
-        
+        background-size: 100%;
         h2 {
           @include mixins.h2-properties(1.5rem);
         }
@@ -97,7 +101,7 @@
         @include mixins.item-card(70px, 50px, $dark-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-4.jpg", rgb(255 158 216 / 88%));      
         @include mixins.h2-properties(1.5rem);
-  
+        background-size: 100%;
         h2 {
           @include mixins.h2-properties(1.5rem);
         }
@@ -109,6 +113,10 @@
             transition: all 0.2s linear;        
           }
         }
+
+        & .description {
+          @include mixins.line-above($dark-font-color, 1px);
+        }
       }
   
       &:nth-child(5) {
@@ -116,7 +124,7 @@
         @include mixins.item-card(70px, 50px, $light-font-color, 0px);
         @include mixins.background-image("../../assets/bottom/bottom-5.jpg", rgb(0 0 0 / 30%));   
         @include mixins.h2-properties(1.5rem);
-        transition: background-size 3s ease-in;     
+        background-size: 100%;          
   
         h2 {
           @include mixins.h2-properties(1.5rem);
@@ -129,11 +137,21 @@
             transition: all 0.2s linear;         
           }
         }
+
+        & .description {
+          @include mixins.line-above($light-font-color, 1px);
+        }
       }
   
       &:hover {           
         background-size: 104%; 
-       }
+      }
+
+      & .description {        
+        font-size: 1rem;
+        margin: 30px 0;
+        padding: 12px 0;
+      }
     }
   }
 }

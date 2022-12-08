@@ -129,11 +129,11 @@ nav {
   grid-template-rows: 489px 468px;
   gap: 25px;
   width: 100%;
-  transition: background-size 3s ease-in;
 }
 .content-bottom-grid .item-card {
   cursor: pointer;
   background-size: 100%;
+  transition: background-size 0.2s ease-in;
 }
 .content-bottom-grid .item-card h2 {
   font-family: "Corben", serif;
@@ -149,6 +149,7 @@ nav {
   background: url("../../assets/bottom/bottom-1.jpg") center;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(238, 190, 255, 0.88);
+  background-size: 100%;
 }
 .content-bottom-grid .item-card:nth-child(1) div :first-child {
   margin-right: 8px;
@@ -175,6 +176,15 @@ nav {
   color: #ebebeb;
   transition: all 0.2s linear;
 }
+.content-bottom-grid .item-card:nth-child(1) .description::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -13px;
+  left: 0px;
+  width: 30px;
+  border-top: 1px solid #333350;
+}
 .content-bottom-grid .item-card:nth-child(2) {
   grid-area: box2;
   padding: 70px 80px;
@@ -184,6 +194,7 @@ nav {
   background: url("../../assets/bottom/bottom-2.jpg") center;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(255, 180, 105, 0.88);
+  background-size: 100%;
 }
 .content-bottom-grid .item-card:nth-child(2) div :first-child {
   margin-right: 8px;
@@ -219,6 +230,7 @@ nav {
   background: url("../../assets/bottom/bottom-3.jpg") center;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  background-size: 100%;
 }
 .content-bottom-grid .item-card:nth-child(3) div :first-child {
   margin-right: 8px;
@@ -257,6 +269,7 @@ nav {
   line-height: 1.4;
   font-size: 1.5rem;
   font-weight: 700;
+  background-size: 100%;
 }
 .content-bottom-grid .item-card:nth-child(4) div :first-child {
   margin-right: 8px;
@@ -283,6 +296,15 @@ nav {
   color: #ebebeb;
   transition: all 0.2s linear;
 }
+.content-bottom-grid .item-card:nth-child(4) .description::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -13px;
+  left: 0px;
+  width: 30px;
+  border-top: 1px solid #333350;
+}
 .content-bottom-grid .item-card:nth-child(5) {
   grid-area: box5;
   padding: 70px 50px;
@@ -295,7 +317,7 @@ nav {
   line-height: 1.4;
   font-size: 1.5rem;
   font-weight: 700;
-  transition: background-size 3s ease-in;
+  background-size: 100%;
 }
 .content-bottom-grid .item-card:nth-child(5) div :first-child {
   margin-right: 8px;
@@ -322,8 +344,22 @@ nav {
   color: #333350;
   transition: all 0.2s linear;
 }
+.content-bottom-grid .item-card:nth-child(5) .description::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -13px;
+  left: 0px;
+  width: 30px;
+  border-top: 1px solid #ebebeb;
+}
 .content-bottom-grid .item-card:hover {
   background-size: 104%;
+}
+.content-bottom-grid .item-card .description {
+  font-size: 1rem;
+  margin: 30px 0;
+  padding: 12px 0;
 }
 
 .content-pinned {
@@ -629,6 +665,20 @@ nav {
   background: #333350;
   color: #ebebeb;
   transition: all 0.2s linear;
+}
+.section-main article:nth-child(2) .description {
+  font-size: 1.5rem;
+  margin: 30px 0;
+  padding: 12px 0;
+}
+.section-main article:nth-child(2) .description::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -13px;
+  left: 0px;
+  width: 30px;
+  border-top: 2px solid #333350;
 }
 .section-main article:nth-child(3) {
   background: url("../../assets/main/section-3.jpg") center;
