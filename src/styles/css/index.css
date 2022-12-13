@@ -518,12 +518,25 @@ nav {
   border-right: none;
   border-left: none;
   border-radius: 0;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
+  color: #ebebeb;
   background-color: transparent;
+  transition: width 0.5s ease 0.2s;
+  font-family: "Mulish", serif;
+  font-weight: 700;
 }
-.content-form ::placeholder {
+.content-form-input::placeholder {
   letter-spacing: 2px;
   color: rgb(101, 101, 101);
+}
+.content-form-input:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 80%;
+}
+.content-form-input:focus-visible {
+  outline: none;
 }
 .content-form-btn {
   cursor: pointer;

@@ -46,13 +46,28 @@
     border-right: none;
     border-left: none;
     border-radius: 0;
-    border-bottom: 1px solid $light-font-color;
-    background-color: transparent;
-  }
+    border-bottom: 2px solid $light-font-color;
+    color: $light-font-color;
+	  background-color: transparent;
+    transition: width .5s ease .2s;
+    font-family: $secondary-font-family;
+    font-weight: 700;
 
-  ::placeholder {
-    letter-spacing: 2px;
-    color: rgb(101, 101, 101);
+	  &::placeholder {
+			letter-spacing: 2px;
+			color: rgb(101, 101, 101); 
+    }
+
+    &:focus {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      width: 80%;
+    }
+
+    &:focus-visible{
+      outline: none;
+    }
   }
 
   &-btn {
